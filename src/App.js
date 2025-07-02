@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import MyCounter from './conponents/MyCounter'
+import './conponents/myCounter.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app-container'>
+      <h1>My Counter App</h1>
+      {/* Render the MyCounter component */}
+      {/* This component manages its own state and functionality */}
+      <p>Click the buttons to increase or decrease the counter.</p>
+      <p>Counter will not go below 0 or above 10.</p>
+      <MyCounter />
     </div>
-  );
+  )
 }
-
-export default App;

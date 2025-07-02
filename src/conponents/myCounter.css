@@ -1,0 +1,70 @@
+/* Main container for the entire app */
+.app-container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    background-color: #f0f2f5;
+}
+
+/* Style for the main heading */
+.app-container h1 {
+    color: brown; 
+}
+
+/* Container that holds the counter UI */
+.counter-container {
+    max-width: 300px; 
+    margin: 40px auto; 
+    padding: 20px; 
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif; 
+}
+
+/* Title inside the counter */
+.counter-title {
+    margin-bottom: 20px; 
+    font-size: 1.5rem;
+    color: #333; 
+}
+/* The number display for the counter */
+.count-display {
+    font-size: 3rem; 
+    color: brown; 
+    margin: 20px 0;
+}
+
+/* Container for the buttons */
+.button-group {
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+}
+
+/* Style for both buttons */
+.btn {
+    background-color: brown; 
+    color: white;
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    border-radius: 8px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background-color: brown; 
+}
+
+/* Message when counter reaches the limit */
+.limit-message {
+    color: green; 
+    margin-top: 10px; 
+    font-weight: bold; 
+}
